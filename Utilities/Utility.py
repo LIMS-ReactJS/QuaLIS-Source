@@ -1,12 +1,12 @@
 ############################################################################################################################################################################
-# 1. click() - || Author: ATE186, Date: 1th June 2022, ID - ||
-# 2. sendKeys() - || Author: ATE186, Date: 1th June 2022 ||
-# 3. clear() - || Author: ATE186, Date: 1th June 2022 ||
-# 4. sleep() - || Author: ATE186, Date: 1th June 2022 ||
-# 5. screenshot() - || Author: ATE186, Date: 1th June 2022 ||
-# 6. maximize() - || Author: ATE186, Date: 1th June 2022 ||
-# 7. minimize() - || Author: ATE186, Date: 1th June 2022 ||
-# 8. get() - || Author: ATE186, Date: 1th June 2022 ||
+# 1. click() - || Author: ATE186, Date: 1th June 2022, ID - #11 ||
+# 2. sendKeys() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
+# 3. clear() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
+# 4. sleep() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
+# 5. screenshot() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
+# 6. maximize() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
+# 7. minimize() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
+# 8. get() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
 ############################################################################################################################################################################
 import time
 from selenium.webdriver.common.by import By
