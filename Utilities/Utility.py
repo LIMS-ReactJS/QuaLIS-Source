@@ -10,6 +10,7 @@
 # 9. title() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
 # 10. url() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
 # 11. text() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
+# 12. refresh() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
 ############################################################################################################################################################################
 
 import time
@@ -64,4 +65,5 @@ def url(driver):
 def text(driver,xpath):
     driver.find_element(By.XPATH,xpath)
 
-
+def refresh(driver):
+    driver.refresh()
