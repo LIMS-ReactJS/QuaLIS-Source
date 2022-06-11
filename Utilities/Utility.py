@@ -6,14 +6,18 @@
 # 5. screenshot() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
 # 6. maximize() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
 # 7. minimize() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
-# 8. get() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
+# 8. implicitWait() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
+# 9. title() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
+# 10. url() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
+# 11. text() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
 ############################################################################################################################################################################
+
 import time
 from selenium.webdriver.common.by import By
 
+from Utilities import BrowserOperation
 
-
-def click(driver, xpath):
+def click(driver,xpath):
     driver.find_element(By.XPATH,xpath).click()
 
 
@@ -44,5 +48,20 @@ def minimize(driver):
 def get(driver,link):
     driver.get(link);
 
+
+def implicitWait(driver,time):
+    driver.implicitly_wait(time)
+
+
+def title(driver):
+    titleValue=driver.title
+    return titleValue
+
+def url(driver):
+    urlValue=driver.current_url
+    return urlValue
+
+def text(driver,xpath):
+    driver.find_element(By.XPATH,xpath)
 
 
