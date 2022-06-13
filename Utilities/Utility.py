@@ -1,16 +1,16 @@
 ############################################################################################################################################################################
-# 1. click() - || Author: ATE186, Date: 1th June 2022, ID - #11 ||
-# 2. sendKeys() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
-# 3. clear() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
-# 4. sleep() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
-# 5. screenshot() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
-# 6. maximize() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
-# 7. minimize() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
-# 8. implicitWait() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
-# 9. title() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
-# 10. url() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
-# 11. text() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
-# 12. refresh() - || Author: ATE186, Date: 1th June 2022 ID - #11 ||
+# 1. click() - || Author: ATE186, Date: 11th June 2022, ID - #11 ||
+# 2. sendKeys() - || Author: ATE186, Date: 11th June 2022 ID - #11 ||
+# 3. clear() - || Author: ATE186, Date: 11th June 2022 ID - #11 ||
+# 4. sleep() - || Author: ATE186, Date: 11th June 2022 ID - #11 ||
+# 5. screenshot() - || Author: ATE186, Date: 11th June 2022 ID - #11 ||
+# 6. maximize() - || Author: ATE186, Date: 11th June 2022 ID - #11 ||
+# 7. minimize() - || Author: ATE186, Date: 11th June 2022 ID - #11 ||
+# 8. implicitWait() - || Author: ATE186, Date: 11th June 2022 ID - #11 ||
+# 9. title() - || Author: ATE186, Date: 11th June 2022 ID - #11 ||
+# 10. url() - || Author: ATE186, Date: 11th June 2022 ID - #11 ||
+# 11. text() - || Author: ATE186, Date: 11th June 2022 ID - #11 ||
+# 12. refresh() - || Author: ATE186, Date: 11th June 2022 ID - #11 ||
 ############################################################################################################################################################################
 
 import time
