@@ -5,17 +5,13 @@
 
 import time
 from configparser import ConfigParser
-
 from selenium import webdriver
-
 from ObjectRepository.Login import ElementLogin
 from Utilities import Utility
 from ObjectRepository import *
 
-
 configDriver=ConfigParser()
 configDriver.read(Utility.projectDirectory()+"\\Configuration\\config.ini")
-
 
 def launchBrowser():
     global driver
