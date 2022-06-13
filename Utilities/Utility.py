@@ -12,11 +12,9 @@
 # 11. text() - || Author: ATE186, Date: 11th June 2022 ID - #11 ||
 # 12. refresh() - || Author: ATE186, Date: 11th June 2022 ID - #11 ||
 ############################################################################################################################################################################
-
+import os
 import time
 from selenium.webdriver.common.by import By
-
-from Utilities import BrowserOperation
 
 
 def click(driver,xpath):
@@ -68,3 +66,20 @@ def text(driver,xpath):
 
 def refresh(driver):
     driver.refresh()
+
+def projectDirectory():
+    projectDirectory = ""
+    fileDirectory = os.path.abspath(__file__)
+    fileDirectoryArray = fileDirectory.split("\\")
+    for i in fileDirectoryArray:
+        projectDirectory = projectDirectory + "\\" + i
+        if i == "QuaLIS-Source":
+                break
+    projectDirectory = projectDirectory[1:]
+    return projectDirectory
+
+def selectByText(driver,xpath,text):
+    driver.find_element(By.XPATH,xpath).click()
+    textXpath="//*[text()='{}']".format(text)
+    driver.find_element(By.XPATH,textXpath).click()
+
