@@ -1,0 +1,2 @@
+The Name description default status folder is used to manage all method to all the screen
+which having only name, description and default status

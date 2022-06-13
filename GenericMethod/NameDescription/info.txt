@@ -1,0 +1,2 @@
+The Name description folder is used to manage all the method to the screen which is having
+only two field like name and description
