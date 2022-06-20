@@ -32,4 +32,6 @@ def launchLIMS():
     Utility.selectByText(driver,ElementLogin.userRole,configDriver.get("Credential", "userrole"))
     Utility.selectByText(driver,ElementLogin.loginType,configDriver.get("Credential", "loginType"))
     Utility.click(driver,ElementLogin.login)
+    Utility.click(driver,ElementLogin.pin)
+    return driver
 
