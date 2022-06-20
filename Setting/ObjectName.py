@@ -29,7 +29,7 @@ name="name"
 
 description="description"
 
-defaultStatus="defaultStatus"
+defaultStatusLabel="defaultStatus"
 
 defaultStatusToggle="defaultStatusToggle"
 

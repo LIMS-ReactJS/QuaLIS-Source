@@ -17,7 +17,7 @@ def launchBrowser():
     global driver
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--incognito")
-    driver = webdriver.Chrome(executable_path= "..\\chromedriver.exe",options=chrome_options)
+    driver = webdriver.Chrome(executable_path= Utility.projectDirectory()+"\\chromedriver.exe",options=chrome_options)
     Utility.maximize(driver)
     Utility.implicitWait(driver, 10)
     return driver

@@ -24,6 +24,7 @@ def addDefaultStatusYes(driver, element, screenshot, value):
     Utility.click(driver, element.get(ObjectName.add))
     Utility.sendKeys(driver,element.get(ObjectName.name),value.get(FieldName.name))
     Utility.sendKeys(driver,element.get(ObjectName.description),value.get(FieldName.description))
+    Utility.click(driver,element.get(ObjectName.defaultStatusLabel))
     Utility.click(driver,element.get(ObjectName.addSubmit))
     Utility.click(driver,element.get(ObjectName.subModuleIcon))
 

@@ -45,7 +45,7 @@ unitDeleteList="//tbody[@role='presentation']/tr/td[4]/a/span[2]"
 
 unitNameFilter="(//span[@class='k-icon k-i-more-vertical'])[1]"
 
-unitDefaultStatus="/html/body/div[5]/div/div/div[2]/div/div/form/div/div[3]/div/label"
+unitDefaultStatusLabel="//label[@for='ndefaultstatus']"
 
 unitDefaultStatusToggle="//input[@name='ndefaultstatus' and @type='checkbox']"
 
@@ -93,7 +93,9 @@ def elementUnit():
 
     unit.update({ObjectName.totalCount:unitTotalCount})
 
-    unit.update({ObjectName.defaultStatus:unitDefaultStatus})
+    unit.update({ObjectName.defaultStatusLabel:unitDefaultStatusLabel})
+
+    unit.update({ObjectName.defaultStatusToggle:unitDefaultStatusToggle})
 
     return unit
 
