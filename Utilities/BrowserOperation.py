@@ -22,9 +22,9 @@ def launchBrowser():
     Utility.implicitWait(driver, 10)
     return driver
 
-def launchLIMS():
-    driver = launchBrowser()
-    Utility.get(driver,configDriver.get("Credential", "link"))
+
+def login():
+    Utility.refresh(driver)
     Utility.sendKeys(driver,ElementLogin.username,configDriver.get("Credential", "username"))
     Utility.click(driver,ElementLogin.password)
     Utility.sleep(2)
@@ -33,5 +33,14 @@ def launchLIMS():
     Utility.selectByText(driver,ElementLogin.loginType,configDriver.get("Credential", "loginType"))
     Utility.click(driver,ElementLogin.login)
     Utility.click(driver,ElementLogin.pin)
+
+
+def launchLIMS():
+    driver = launchBrowser()
+    Utility.get(driver, configDriver.get("Credential", "link"))
+    login()
     return driver
 
+
+def refreshLogin(driver):
+    login()

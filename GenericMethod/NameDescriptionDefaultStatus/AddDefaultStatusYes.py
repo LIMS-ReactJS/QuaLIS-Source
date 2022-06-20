@@ -6,10 +6,11 @@ from selenium.webdriver.common.by import By
 from Setting import ObjectName, FieldName
 from selenium import webdriver
 
-from Utilities import Utility
+from Utilities import Utility, BrowserOperation
 
 
 def addDefaultStatusYes(driver, element, screenshot, value):
+    BrowserOperation.refreshLogin(driver)
     screenshot = dict(screenshot)
     value = dict(value)
     element = dict(element)
@@ -25,7 +26,7 @@ def addDefaultStatusYes(driver, element, screenshot, value):
     Utility.sendKeys(driver,element.get(ObjectName.description),value.get(FieldName.description))
     Utility.click(driver,element.get(ObjectName.addSubmit))
     Utility.click(driver,element.get(ObjectName.subModuleIcon))
-    Utility.refresh(driver)
+
 
 
 
