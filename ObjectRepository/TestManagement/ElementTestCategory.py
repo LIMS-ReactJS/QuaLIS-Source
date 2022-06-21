@@ -60,7 +60,7 @@ subModule="Base Master"
 
 screen="testCategory"
 
-def elementCestCategory():
+def elementTestCategory():
 
     testCategory={}
 
