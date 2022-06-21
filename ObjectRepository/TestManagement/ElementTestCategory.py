@@ -8,7 +8,7 @@ pin = "//a[@class='text-center nav-link']"
 
 masterIcon="//a[@data-rb-event-key='MenuId_1']"
 
-userManagementIcon="//span[text()='Test Management']"
+testManagementIcon="//span[text()='Test Management']"
 
 testCategoryIcon="//a[@href='#/testCategory']"
 
@@ -66,7 +66,7 @@ def elementTestCategory():
 
     testCategory.update({ObjectName.moduleIcon:masterIcon})
 
-    testCategory.update({ObjectName.subModuleIcon:userManagementIcon})
+    testCategory.update({ObjectName.subModuleIcon:testManagementIcon})
 
     testCategory.update({ObjectName.screenIcon:testCategoryIcon})
 
