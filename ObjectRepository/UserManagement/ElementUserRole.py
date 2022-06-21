@@ -20,7 +20,7 @@ userRoleDownloadPDF="//button[@data-tip='Download PDF']"
 
 userRoleDownloadExcel="//button[@data-tip='Download Excel']"
 
-userRoleName="//input[@id='slabname'][@name='slabname']"
+userRoleName="//input[@id='suserrolename'][@name='suserrolename']"
 
 userRoleDescription="//textarea[@id='sdescription'][@name='sdescription']"
 
