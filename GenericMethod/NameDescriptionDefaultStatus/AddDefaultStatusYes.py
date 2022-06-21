@@ -19,6 +19,7 @@ def addDefaultStatusYes(driver, element, screenshot, value):
     screen = element.get(ObjectName.screen)
     navigatePermission = "FAIL"
     Utility.click(driver,element.get(ObjectName.moduleIcon))
+    Utility.scrollToElement(driver,element.get(ObjectName.subModuleIcon))
     Utility.click(driver,element.get(ObjectName.subModuleIcon))
     Utility.click(driver,element.get(ObjectName.screenIcon))
     Utility.click(driver, element.get(ObjectName.add))

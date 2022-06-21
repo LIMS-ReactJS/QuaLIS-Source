@@ -83,3 +83,6 @@ def selectByText(driver,xpath,text):
     textXpath="//*[text()='{}']".format(text)
     driver.find_element(By.XPATH,textXpath).click()
 
+def scrollToElement(driver,xpath):
+    element = driver.find_element(By.XPATH, xpath)
+    driver.execute_script("arguments[0].scrollIntoView();", element)
