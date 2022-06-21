@@ -8,7 +8,7 @@ pin = "//a[@class='text-center nav-link']"
 
 masterIcon="//a[@data-rb-event-key='MenuId_1']"
 
-userManagementIcon="//span[text()='Organisation']"
+organisationManagemenIcon="//span[text()='Organisation']"
 
 labIcon="//a[@href='#/section']"
 
@@ -66,7 +66,7 @@ def elementLab():
 
     lab.update({ObjectName.moduleIcon:masterIcon})
 
-    lab.update({ObjectName.subModuleIcon:userManagementIcon})
+    lab.update({ObjectName.subModuleIcon:organisationManagemenIcon})
 
     lab.update({ObjectName.screenIcon:labIcon})
 
