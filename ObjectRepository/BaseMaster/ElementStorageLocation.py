@@ -1,5 +1,5 @@
 ########################################################################################################################################################################################################################################################################################################################################################
-# Author: ATE186, Date: 20th June 2022, ID - #29 ||
+# Author: ATE186, Date: 20th June 2022, ID - #54 ||
 ########################################################################################################################################################################################################################################################################################################################################################
 
 from Setting import ObjectName
@@ -10,93 +10,93 @@ masterIcon="//a[@data-rb-event-key='MenuId_1']"
 
 baseMasterIcon="//span[text()='Base Master']"
 
-storageConditionIcon="//a[@href='#/storageCondition']"
+storageLocationIcon="//a[@href='#/storageLocation']"
 
-storageConditionAdd="//button[@data-tip='Add']"
+storageLocationAdd="//button[@data-tip='Add']"
 
-storageConditionRefresh="//button[@data-tip='Refresh']"
+storageLocationRefresh="//button[@data-tip='Refresh']"
 
-storageConditionDownloadPDF="//button[@data-tip='Download PDF']"
+storageLocationDownloadPDF="//button[@data-tip='Download PDF']"
 
-storageConditionDownloadExcel="//button[@data-tip='Download Excel']"
+storageLocationDownloadExcel="//button[@data-tip='Download Excel']"
 
-storageConditionName="//input[@id='sstorageconditionname'][@name='sstorageconditionname']"
+storageLocationName="//input[@id='sstoragelocationname'][@name='sstoragelocationname']"
 
-storageConditionDescription="//textarea[@id='sdescription'][@name='sdescription']"
+storageLocationDescription="//textarea[@id='sdescription'][@name='sdescription']"
 
-storageConditionAddSubmit="//button[text()='Save']"
+storageLocationAddSubmit="//button[text()='Save']"
 
-storageConditionAddCancel="//button[text()='Cancel']"
+storageLocationAddCancel="//button[text()='Cancel']"
 
-storageConditionEditSubmit="//button[text()='Save']"
+storageLocationEditSubmit="//button[text()='Save']"
 
-storageConditionEditCancel="//button[text()='Cancel']"
+storageLocationEditCancel="//button[text()='Cancel']"
 
-storageConditionNameList="/html/body/div[1]/div/div[2]/div/div[2]/div/div/div/div[2]/div/div[3]/div/div[1]/table/tbody/tr/td[1]"
+storageLocationNameList="/html/body/div[1]/div/div[2]/div/div[2]/div/div/div/div[2]/div/div[3]/div/div[1]/table/tbody/tr/td[1]"
 
-storageConditionDescriptionList="//tbody[@role='presentation']/tr/td[2]"
+storageLocationDescriptionList="//tbody[@role='presentation']/tr/td[2]"
 
-storageConditionDefaultStatusList="//tbody[@role='presentation']/tr/td[3]"
+storageLocationDefaultStatusList="//tbody[@role='presentation']/tr/td[3]"
 
-storageConditionEditList="//tbody[@role='presentation']/tr/td[4]/a/span[1]"
+storageLocationEditList="//tbody[@role='presentation']/tr/td[4]/a/span[1]"
 
-storageConditionDeleteList="//tbody[@role='presentation']/tr/td[4]/a/span[2]"
+storageLocationDeleteList="//tbody[@role='presentation']/tr/td[4]/a/span[2]"
 
-storageConditionNameFilter="(//span[@class='k-icon k-i-more-vertical'])[1]"
+storageLocationNameFilter="(//span[@class='k-icon k-i-more-vertical'])[1]"
 
-storageConditionDefaultStatusLabel="//label[@for='ndefaultstatus']"
+storageLocationDefaultStatusLabel="//label[@for='ndefaultstatus']"
 
-storageConditionDefaultStatusToggle="//input[@name='ndefaultstatus' and @type='checkbox']"
+storageLocationDefaultStatusToggle="//input[@name='ndefaultstatus' and @type='checkbox']"
 
-storageConditionTotalCount="//div[@class='k-pager-info k-label']"
+storageLocationTotalCount="//div[@class='k-pager-info k-label']"
 
-storageConditionScreenHeader="//*[@class='navbar-brand']/h2"
+storageLocationScreenHeader="//*[@class='navbar-brand']/h2"
 
-storageConditionAddPopupHeader="//div[@class='header-primary flex-grow-1 modal-title h4' and @id='add-user']"
+storageLocationAddPopupHeader="//div[@class='header-primary flex-grow-1 modal-title h4' and @id='add-user']"
 
 module="Master"
 
 subModule="Base Master"
 
-screen="storageCondition"
+screen="Storage Location"
 
-def elementStorageCondition():
+def elementStorageLocation():
 
-    storageCondition={}
+    storageLocation={}
 
-    storageCondition.update({ObjectName.moduleIcon:masterIcon})
+    storageLocation.update({ObjectName.moduleIcon:masterIcon})
 
-    storageCondition.update({ObjectName.subModuleIcon:baseMasterIcon})
+    storageLocation.update({ObjectName.subModuleIcon:baseMasterIcon})
 
-    storageCondition.update({ObjectName.screenIcon:storageConditionIcon})
+    storageLocation.update({ObjectName.screenIcon:storageLocationIcon})
 
-    storageCondition.update({ObjectName.add:storageConditionAdd})
+    storageLocation.update({ObjectName.add:storageLocationAdd})
 
-    storageCondition.update({ObjectName.name: storageConditionName})
+    storageLocation.update({ObjectName.name: storageLocationName})
 
-    storageCondition.update({ObjectName.description:storageConditionDescription})
+    storageLocation.update({ObjectName.description:storageLocationDescription})
 
-    storageCondition.update({ObjectName.addSubmit:storageConditionAddSubmit})
+    storageLocation.update({ObjectName.addSubmit:storageLocationAddSubmit})
 
-    storageCondition.update({ObjectName.addCancel:storageConditionAddCancel})
+    storageLocation.update({ObjectName.addCancel:storageLocationAddCancel})
 
-    storageCondition.update({ObjectName.screenHeader:storageConditionScreenHeader})
+    storageLocation.update({ObjectName.screenHeader:storageLocationScreenHeader})
 
-    storageCondition.update({ObjectName.module:module})
+    storageLocation.update({ObjectName.module:module})
 
-    storageCondition.update({ObjectName.subModule:subModule})
+    storageLocation.update({ObjectName.subModule:subModule})
 
-    storageCondition.update({ObjectName.screen:screen})
+    storageLocation.update({ObjectName.screen:screen})
 
-    storageCondition.update({ObjectName.addPopupHeader:storageConditionAddPopupHeader})
+    storageLocation.update({ObjectName.addPopupHeader:storageLocationAddPopupHeader})
 
-    storageCondition.update({ObjectName.totalCount:storageConditionTotalCount})
+    storageLocation.update({ObjectName.totalCount:storageLocationTotalCount})
 
-    storageCondition.update({ObjectName.defaultStatusLabel:storageConditionDefaultStatusLabel})
+    storageLocation.update({ObjectName.defaultStatusLabel:storageLocationDefaultStatusLabel})
 
-    storageCondition.update({ObjectName.defaultStatusToggle:storageConditionDefaultStatusToggle})
+    storageLocation.update({ObjectName.defaultStatusToggle:storageLocationDefaultStatusToggle})
 
-    return storageCondition
+    return storageLocation
 
 
 
