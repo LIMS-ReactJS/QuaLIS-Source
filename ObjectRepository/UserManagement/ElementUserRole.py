@@ -60,13 +60,13 @@ subModule="Organisation"
 
 screen="userRole"
 
-def elementuserRole():
+def elementUserRole():
 
     userRole={}
 
     userRole.update({ObjectName.moduleIcon:masterIcon})
 
-    userRole.update({ObjectName.subModuleIcon:organisationManagemenIcon})
+    userRole.update({ObjectName.subModuleIcon:userManagementIcon})
 
     userRole.update({ObjectName.screenIcon:userRoleIcon})
 
@@ -92,9 +92,6 @@ def elementuserRole():
 
     userRole.update({ObjectName.totalCount:userRoleTotalCount})
 
-    userRole.update({ObjectName.defaultStatususerRoleel:userRoleDefaultStatususerRoleel})
-
-    userRole.update({ObjectName.defaultStatusToggle:userRoleDefaultStatusToggle})
 
     return userRole
 

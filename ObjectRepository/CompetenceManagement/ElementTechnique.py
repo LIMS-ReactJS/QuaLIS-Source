@@ -61,13 +61,13 @@ subModule="Base Master"
 
 screen="technique"
 
-def elementtechnique():
+def elementTechnique():
 
     technique={}
 
     technique.update({ObjectName.moduleIcon:masterIcon})
 
-    technique.update({ObjectName.subModuleIcon:baseMasterIcon})
+    technique.update({ObjectName.subModuleIcon:competenceManagementIcon})
 
     technique.update({ObjectName.screenIcon:techniqueIcon})
 

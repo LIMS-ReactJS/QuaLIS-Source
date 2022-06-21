@@ -60,7 +60,7 @@ subModule="Organisation"
 
 screen="section"
 
-def elementsection():
+def elementSection():
 
     section={}
 
@@ -92,9 +92,6 @@ def elementsection():
 
     section.update({ObjectName.totalCount:sectionTotalCount})
 
-    section.update({ObjectName.defaultStatussectionel:sectionDefaultStatussectionel})
-
-    section.update({ObjectName.defaultStatusToggle:sectionDefaultStatusToggle})
 
     return section
 

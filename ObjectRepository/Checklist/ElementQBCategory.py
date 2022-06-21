@@ -67,7 +67,7 @@ def elementQBCategory():
 
     QBCategory.update({ObjectName.moduleIcon:masterIcon})
 
-    QBCategory.update({ObjectName.subModuleIcon:baseMasterIcon})
+    QBCategory.update({ObjectName.subModuleIcon:checklistManagementIcon})
 
     QBCategory.update({ObjectName.screenIcon:QBCategoryIcon})
 

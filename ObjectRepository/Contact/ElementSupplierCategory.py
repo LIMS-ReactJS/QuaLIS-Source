@@ -61,13 +61,13 @@ subModule="Base Master"
 
 screen="supplierCategory"
 
-def elementsupplierCategory():
+def elementSupplierCategory():
 
     supplierCategory={}
 
     supplierCategory.update({ObjectName.moduleIcon:masterIcon})
 
-    supplierCategory.update({ObjectName.subModuleIcon:baseMasterIcon})
+    supplierCategory.update({ObjectName.subModuleIcon:contactsIcon})
 
     supplierCategory.update({ObjectName.screenIcon:supplierCategoryIcon})
 

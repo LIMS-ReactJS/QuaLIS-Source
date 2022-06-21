@@ -61,13 +61,13 @@ subModule="Base Master"
 
 screen="methodCategory"
 
-def elementmethodCategory():
+def elementMethodCategory():
 
     methodCategory={}
 
     methodCategory.update({ObjectName.moduleIcon:masterIcon})
 
-    methodCategory.update({ObjectName.subModuleIcon:baseMasterIcon})
+    methodCategory.update({ObjectName.subModuleIcon:testManagementIcon})
 
     methodCategory.update({ObjectName.screenIcon:methodCategoryIcon})
 
