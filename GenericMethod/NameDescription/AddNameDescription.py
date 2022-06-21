@@ -16,9 +16,6 @@ def addNameDescription(driver, element, screenshot, value):
     screenshot = dict(screenshot)
     value = dict(value)
     element = dict(element)
-    module = element.get(ObjectName.module)
-    subModule = element.get(ObjectName.subModule)
-    screen = element.get(ObjectName.screen)
     navigatePermission = "FAIL"
     Utility.click(driver,element.get(ObjectName.moduleIcon))
     Utility.scrollToElement(driver,element.get(ObjectName.subModuleIcon))
