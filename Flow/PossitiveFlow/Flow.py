@@ -19,9 +19,7 @@ from TestData import TestDataFlow
 from Utilities import BrowserOperation, Utility
 
 driver=BrowserOperation.launchLIMS()
-
-TestCoverageCountry.countryAdd(driver,"India","D","d","d")
-
+TestCoverageCountry.countryAdd(driver,TestDataFlow.country())
 quit()
 TestCoveragePasswordPolicy.passwordPolicyAddApprove(driver,TestDataFlow.userRoleReviewer)
 TestCoveragePasswordPolicy.passwordPolicyAddApprove(driver,TestDataFlow.userRoleApprover)

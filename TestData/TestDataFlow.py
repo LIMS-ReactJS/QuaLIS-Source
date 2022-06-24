@@ -78,3 +78,15 @@ def source():
 userRoleReviewer = "Reviewer"
 userRoleApprover = "Approver"
 userRoleAnalyst = "Analyst"
+
+def country():
+    name="India"
+    shortName="IND"
+    twoCharName="IN"
+    threeCharName="IND"
+    country={}
+    country.update({FieldName.countryName:name})
+    country.update({FieldName.countryShortName:shortName})
+    country.update({FieldName.countryTwoChar:twoCharName})
+    country.update({FieldName.countryThreeChar:threeCharName})
+    return country
