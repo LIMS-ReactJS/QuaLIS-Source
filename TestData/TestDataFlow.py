@@ -74,3 +74,7 @@ def source():
     source.update({FieldName.name:name})
     source.update({FieldName.description:description})
     return source
+
+userRoleReviewer = "Reviewer"
+userRoleApprover = "Approver"
+userRoleAnalyst = "Analyst"

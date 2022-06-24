@@ -27,7 +27,7 @@ def login():
     Utility.refresh(driver)
     Utility.sendKeys(driver,ElementLogin.username,configDriver.get("Credential", "username"))
     Utility.click(driver,ElementLogin.password)
-    Utility.sleep(2)
+    time.sleep(2)
     Utility.sendKeys(driver,ElementLogin.password,configDriver.get("Credential", "password"))
     Utility.selectByText(driver,ElementLogin.userRole,configDriver.get("Credential", "userrole"))
     Utility.selectByText(driver,ElementLogin.loginType,configDriver.get("Credential", "loginType"))

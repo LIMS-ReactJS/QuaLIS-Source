@@ -13,12 +13,16 @@ from ObjectRepository.ProjectManagement import ElementProductCategory
 from ObjectRepository.TestManagement import ElementTestCategory, ElementMethodCategory
 from ObjectRepository.UserManagement import ElementDesignation, ElementUserRole
 from Screenshot.PossitiveFlow import ScreenshotUnit
+from TestCoverage.Configuration import TestCoveragePasswordPolicy
 from TestData import TestDataFlow
-from Utilities import BrowserOperation
-
+from Utilities import BrowserOperation, Utility
 
 driver=BrowserOperation.launchLIMS()
 
+TestCoveragePasswordPolicy.passwordPolicyAddApprove(driver,TestDataFlow.userRoleReviewer)
+TestCoveragePasswordPolicy.passwordPolicyAddApprove(driver,TestDataFlow.userRoleApprover)
+TestCoveragePasswordPolicy.passwordPolicyAddApprove(driver,TestDataFlow.userRoleAnalyst)
+quit()
 AddNameDescription.addNameDescription(driver,ElementSupplierCategory.elementSupplierCategory(),ScreenshotUnit.unit(),TestDataFlow.productCategory())
 AddNameDescription.addNameDescription(driver,ElementQBCategory.elementQBCategory(),ScreenshotUnit.unit(),TestDataFlow.productCategory())
 AddNameDescription.addNameDescription(driver,ElementMethodCategory.elementMethodCategory(),ScreenshotUnit.unit(),TestDataFlow.productCategory())

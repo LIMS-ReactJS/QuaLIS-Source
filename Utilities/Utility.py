@@ -14,6 +14,8 @@
 ############################################################################################################################################################################
 import os
 import time
+from datetime import datetime
+
 from selenium.webdriver.common.by import By
 
 
@@ -28,9 +30,6 @@ def sendKeys(driver,xpath,value):
 def clear(driver,xpath):
     driver.find_element(By.XPATH, xpath).clear()
 
-
-def sleep(seconds):
-    time.sleep(seconds)
 
 
 def screenshot(driver,location):
@@ -86,3 +85,11 @@ def selectByText(driver,xpath,text):
 def scrollToElement(driver,xpath):
     element = driver.find_element(By.XPATH, xpath)
     driver.execute_script("arguments[0].scrollIntoView();", element)
+
+def time():
+
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    print("Current Time =", current_time)
+
+time()
