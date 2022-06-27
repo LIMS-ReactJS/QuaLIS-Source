@@ -9,7 +9,8 @@
 # 8. source() - || Author: ATE186, Date: 21st June 2022 ID - #37 ||
 ########################################################################################################################################################################################################################################################################################################################################################
 
-from Setting import FieldName
+from Setting import FieldName, InterfaceType
+
 
 def unit():
     name="CM1"
@@ -144,3 +145,22 @@ def chargeBand():
     chargeBand.update({FieldName.chargeBandDescription:description})
     chargeBand.update({FieldName.chargeBandPrice:price})
     return chargeBand
+
+def technique():
+    name="Chemical Technique"
+    description="Chemical technique is used to test the chemical process"
+    technique={}
+    technique.update({FieldName.techniqueName:name})
+    technique.update({FieldName.techniqueDescription:description})
+    return technique
+
+def instrumentCategory():
+    name="MED INST CAT"
+    description="Medical Instrument Category"
+    techniqueName=technique().get(FieldName.techniqueName)
+    instrumentCategory={}
+    instrumentCategory.update({FieldName.instrumentCategoryName:name})
+    instrumentCategory.update({FieldName.instrumentCategoryDescription:description})
+    instrumentCategory.update({FieldName.instrumentCategoryTechnique:techniqueName})
+    instrumentCategory.update({FieldName.instrumentCategoryInterface:InterfaceType.logiLab})
+    return instrumentCategory

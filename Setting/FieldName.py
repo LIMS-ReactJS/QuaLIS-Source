@@ -35,3 +35,13 @@ licenseAuthorityCountryShortName="licenseAuthorityCountryShortName"
 chargeBandName="chargeBandName"
 chargeBandDescription="chargeBandDescription"
 chargeBandPrice="chargeBandPrice"
+
+techniqueName="techniqueName"
+techniqueDescription="techniqueDescription"
+
+instrumentCategoryName="instrumentCategoryName"
+instrumentCategoryDescription="instrumentCategoryDescription"
+instrumentCategoryTechnique="instrumentCategoryTechnique"
+instrumentCategoryInterface="instrumentCategoryInterface"
+instrumentCategoryCategoryBasedFlow="instrumentCategoryCategoryBasedFlow"
+instrumentCategoryDefaultValue="instrumentCategoryDefaultValue"

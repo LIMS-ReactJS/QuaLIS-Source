@@ -16,14 +16,18 @@ from Screenshot.PossitiveFlow import ScreenshotUnit
 from TestCoverage.BaseMaster import TestCoverageLicenseAuthority, TestCoverageChargeBand
 from TestCoverage.Configuration import TestCoveragePasswordPolicy
 from TestCoverage.Contacts import TestCoverageCountry
+from TestCoverage.InstrumentManagement import TestCoverageInstrumentCategory
 from TestCoverage.UserManagement import TestCoverageUsers
 from TestData import TestDataFlow
 from Utilities import BrowserOperation, Utility
 
 driver=BrowserOperation.launchLIMS()
-TestCoverageChargeBand.chargeBandAdd(driver,TestDataFlow.chargeBand())
-
+TestCoverageInstrumentCategory.instrumentCategoryAdd(driver,TestDataFlow.instrumentCategory())
 quit()
+
+
+
+TestCoverageChargeBand.chargeBandAdd(driver,TestDataFlow.chargeBand())
 TestCoverageLicenseAuthority.licenseAuthorityAdd(driver,TestDataFlow.liceseAuthority())
 TestCoverageUsers.userAdd(driver,TestDataFlow.user())
 TestCoverageCountry.countryAdd(driver,TestDataFlow.country())
