@@ -31,3 +31,7 @@ licenseAuthorityName="licenseAuthorityName"
 licenseAuthorityShortName="licenseAuthorityShortName"
 licenseAuthorityCountry="licenseAuthorityCountry"
 licenseAuthorityCountryShortName="licenseAuthorityCountryShortName"
+
+chargeBandName="chargeBandName"
+chargeBandDescription="chargeBandDescription"
+chargeBandPrice="chargeBandPrice"

@@ -13,7 +13,7 @@ from ObjectRepository.ProjectManagement import ElementProductCategory
 from ObjectRepository.TestManagement import ElementTestCategory, ElementMethodCategory
 from ObjectRepository.UserManagement import ElementDesignation, ElementUserRole
 from Screenshot.PossitiveFlow import ScreenshotUnit
-from TestCoverage.BaseMaster import TestCoverageLicenseAuthority
+from TestCoverage.BaseMaster import TestCoverageLicenseAuthority, TestCoverageChargeBand
 from TestCoverage.Configuration import TestCoveragePasswordPolicy
 from TestCoverage.Contacts import TestCoverageCountry
 from TestCoverage.UserManagement import TestCoverageUsers
@@ -21,8 +21,7 @@ from TestData import TestDataFlow
 from Utilities import BrowserOperation, Utility
 
 driver=BrowserOperation.launchLIMS()
-
-
+TestCoverageChargeBand.chargeBandAdd(driver,TestDataFlow.chargeBand())
 
 quit()
 TestCoverageLicenseAuthority.licenseAuthorityAdd(driver,TestDataFlow.liceseAuthority())

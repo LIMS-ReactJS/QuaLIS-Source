@@ -134,3 +134,13 @@ def liceseAuthority():
     licenseAuthority.update({FieldName.licenseAuthorityCountry:countryName})
     licenseAuthority.update({FieldName.licenseAuthorityCountryShortName:countryShortName})
     return licenseAuthority
+
+def chargeBand():
+    name="CB001"
+    description="Charge Band about 0001"
+    price="100"
+    chargeBand={}
+    chargeBand.update({FieldName.chargeBandName:name})
+    chargeBand.update({FieldName.chargeBandDescription:description})
+    chargeBand.update({FieldName.chargeBandPrice:price})
+    return chargeBand
