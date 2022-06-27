@@ -90,3 +90,36 @@ def country():
     country.update({FieldName.countryTwoChar:twoCharName})
     country.update({FieldName.countryThreeChar:threeCharName})
     return country
+
+def user():
+    loginID="murali"
+    firstName="Murali"
+    lastName="Rajendran"
+    initial="R"
+    addressOne="Priyan Plaza"
+    addressTwo="Nungambakkam, Chennai"
+    addressThree="Tamil Nadu, India"
+    qualification="B.Tech"
+    jobDescription="Chemical Testing"
+    mobileNumber="9988776655"
+    phoneNumber="0449988776655"
+    email="murali.r@agaramtech.com"
+    site="UK_NIBSC"
+    user={}
+    user.update({FieldName.usersLoginID:loginID})
+    user.update({FieldName.usersFirstName:firstName})
+    user.update({FieldName.usersLastName:lastName})
+    user.update({FieldName.usersInitial:initial})
+    user.update({FieldName.usersAddressOne:addressOne})
+    user.update({FieldName.usersAddressTwo:addressTwo})
+    user.update({FieldName.usersQualification:qualification})
+    user.update({FieldName.usersJobDescription:jobDescription})
+    user.update({FieldName.usersPhoneNumber:phoneNumber})
+    user.update({FieldName.usersMobileNumber:mobileNumber})
+    user.update({FieldName.usersEmail:email})
+    user.update({FieldName.usersDivision:division().get(FieldName.name)})
+    user.update({FieldName.usersCountry:country().get(FieldName.countryName)})
+    user.update({FieldName.usersUserRole:userRoleAnalyst})
+    user.update({FieldName.usersDesignation:designation().get(FieldName.name)})
+
+    return user

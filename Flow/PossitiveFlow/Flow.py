@@ -15,12 +15,16 @@ from ObjectRepository.UserManagement import ElementDesignation, ElementUserRole
 from Screenshot.PossitiveFlow import ScreenshotUnit
 from TestCoverage.Configuration import TestCoveragePasswordPolicy
 from TestCoverage.Contacts import TestCoverageCountry
+from TestCoverage.UserManagement import TestCoverageUsers
 from TestData import TestDataFlow
 from Utilities import BrowserOperation, Utility
 
 driver=BrowserOperation.launchLIMS()
-TestCoverageCountry.countryAdd(driver,TestDataFlow.country())
+TestCoverageUsers.userAdd(driver,TestDataFlow.user())
+
 quit()
+
+TestCoverageCountry.countryAdd(driver,TestDataFlow.country())
 TestCoveragePasswordPolicy.passwordPolicyAddApprove(driver,TestDataFlow.userRoleReviewer)
 TestCoveragePasswordPolicy.passwordPolicyAddApprove(driver,TestDataFlow.userRoleApprover)
 TestCoveragePasswordPolicy.passwordPolicyAddApprove(driver,TestDataFlow.userRoleAnalyst)

@@ -37,6 +37,7 @@ def login():
 
 def launchLIMS():
     driver = launchBrowser()
+    Utility.implicitWait(driver,30)
     Utility.get(driver, configDriver.get("Credential", "link"))
     login()
     return driver
