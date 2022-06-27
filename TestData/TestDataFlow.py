@@ -121,5 +121,16 @@ def user():
     user.update({FieldName.usersCountry:country().get(FieldName.countryName)})
     user.update({FieldName.usersUserRole:userRoleAnalyst})
     user.update({FieldName.usersDesignation:designation().get(FieldName.name)})
-
     return user
+
+def liceseAuthority():
+    name="LA001"
+    shortName="LA"
+    countryName=country().get(FieldName.countryName)
+    countryShortName=country().get(FieldName.countryShortName)
+    licenseAuthority={}
+    licenseAuthority.update({FieldName.licenseAuthorityName:name})
+    licenseAuthority.update({FieldName.licenseAuthorityShortName:shortName})
+    licenseAuthority.update({FieldName.licenseAuthorityCountry:countryName})
+    licenseAuthority.update({FieldName.licenseAuthorityCountryShortName:countryShortName})
+    return licenseAuthority

@@ -13,6 +13,7 @@ from ObjectRepository.ProjectManagement import ElementProductCategory
 from ObjectRepository.TestManagement import ElementTestCategory, ElementMethodCategory
 from ObjectRepository.UserManagement import ElementDesignation, ElementUserRole
 from Screenshot.PossitiveFlow import ScreenshotUnit
+from TestCoverage.BaseMaster import TestCoverageLicenseAuthority
 from TestCoverage.Configuration import TestCoveragePasswordPolicy
 from TestCoverage.Contacts import TestCoverageCountry
 from TestCoverage.UserManagement import TestCoverageUsers
@@ -20,10 +21,12 @@ from TestData import TestDataFlow
 from Utilities import BrowserOperation, Utility
 
 driver=BrowserOperation.launchLIMS()
-TestCoverageUsers.userAdd(driver,TestDataFlow.user())
+
+
 
 quit()
-
+TestCoverageLicenseAuthority.licenseAuthorityAdd(driver,TestDataFlow.liceseAuthority())
+TestCoverageUsers.userAdd(driver,TestDataFlow.user())
 TestCoverageCountry.countryAdd(driver,TestDataFlow.country())
 TestCoveragePasswordPolicy.passwordPolicyAddApprove(driver,TestDataFlow.userRoleReviewer)
 TestCoveragePasswordPolicy.passwordPolicyAddApprove(driver,TestDataFlow.userRoleApprover)

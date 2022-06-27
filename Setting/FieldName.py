@@ -26,3 +26,8 @@ usersSite="site"
 usersUserRole="userRole"
 usersIsActive="usersIsActive"
 usersIsUnLock="usersIsUnLock"
+
+licenseAuthorityName="licenseAuthorityName"
+licenseAuthorityShortName="licenseAuthorityShortName"
+licenseAuthorityCountry="licenseAuthorityCountry"
+licenseAuthorityCountryShortName="licenseAuthorityCountryShortName"
