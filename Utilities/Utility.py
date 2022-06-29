@@ -17,6 +17,9 @@ import time
 from datetime import datetime
 
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
+
+from ObjectRepository import ElementCalender
 
 
 def click(driver,xpath):
@@ -87,9 +90,18 @@ def scrollToElement(driver,xpath):
     driver.execute_script("arguments[0].scrollIntoView();", element)
 
 def time():
-
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
     print("Current Time =", current_time)
 
-time()
+def calender(driver,xpath,date):
+    click(driver,xpath)
+    dateDetail=date.split('-')
+    day=dateDetail[0]
+    month=dateDetail[1].capitalize()
+    year=dateDetail[2]
+    dateSelect=Select(driver.find_element(By.XPATH,ElementCalender.year))
+    dateSelect.select_by_visible_text(year)
+    monthSelect=Select(driver.find_element(By.XPATH,ElementCalender.month))
+    monthSelect.select_by_visible_text(month)
+    driver.find_element(By.XPATH,"//*[text()='{}']".format(day)).click()

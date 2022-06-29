@@ -188,9 +188,11 @@ def instrument():
     instrument.update({FieldName.instrumentSupplier:supplierName})
     instrument.update({FieldName.instrumentCategoryName:instrumentCategory().get(FieldName.instrumentCategoryName)})
     instrument.update({FieldName.instrumentSerialNumber:serialNumber})
-    instrument.update({FieldName.instrumentSerialNumber:serialNumber})
-    instrument.update({FieldName.instrumentSerialNumber:serialNumber})
-    instrument.update({FieldName.instrumentSerialNumber:serialNumber})
-    instrument.update({FieldName.instrumentSerialNumber:serialNumber})
+    instrument.update({FieldName.instrumentManufacturerDate:manufacturerDate})
+    instrument.update({FieldName.instrumentPODate:PODate})
+    instrument.update({FieldName.instrumentInstallationDate:installationDate})
+    instrument.update({FieldName.instrumentReceivedDate:receivedDate})
+    instrument.update({FieldName.instrumentExpireDate:expiryDate})
+
     return instrument
 

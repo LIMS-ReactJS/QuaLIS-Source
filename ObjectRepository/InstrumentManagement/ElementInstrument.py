@@ -47,7 +47,7 @@ instrumentReceivedDate="//*[@name='dreceiveddate']"
 
 instrumentInstallationDate="//*[@name='dinstallationdate']"
 
-instrumentExpirationDate="//*[@name='dexpirydate']"
+instrumentExpireDate="//*[@name='dexpirydate']"
 
 instrumentAddSubmit="//button[text()='Save']"
 

@@ -27,4 +27,9 @@ def instrumentAdd(driver,instrument):
             break
         else:
            pass
-    
+    Utility.sendKeys(driver,ElementInstrument.instrumentSerialNumber,instrument.get(FieldName.instrumentSerialNumber))
+    Utility.calender(driver,ElementInstrument.instrumentManufacturerDate,instrument.get(FieldName.instrumentManufacturerDate))
+    Utility.calender(driver,ElementInstrument.instrumentPODate,instrument.get(FieldName.instrumentPODate))
+    Utility.calender(driver,ElementInstrument.instrumentReceivedDate,instrument.get(FieldName.instrumentReceivedDate))
+    Utility.calender(driver,ElementInstrument.instrumentInstallationDate,instrument.get(FieldName.instrumentInstallationDate))
+    Utility.calender(driver,ElementInstrument.instrumentExpireDate,instrument.get(FieldName.instrumentExpireDate))

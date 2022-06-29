@@ -56,7 +56,7 @@ instrumentInstallationDate="instrumentInstallationDate"
 instrumentPODate="instrumentPODate"
 instrumentReceivedDate="instrumentReceivedDate"
 instrumentInstallationDate="instrumentInstallationDate"
-instrumentExpiryDate="instrumentExpiryDate"
+instrumentExpireDate="instrumentExpireDate"
 
 supplierName="supplierName"
 supplierAddressOne="supplierAddressOne"
