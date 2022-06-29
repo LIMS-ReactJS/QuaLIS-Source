@@ -242,3 +242,19 @@ def client():
     client.update({FieldName.clientCountry:countryName})
     client.update({FieldName.clientIsActive:active})
     return client
+
+def MAHolder():
+    name="AGARAM MA Holder"
+    addressOne="Nungambakkam"
+    addressTwo="Chennai"
+    addressThree="Tamil Nadu, India"
+    countryName=country().get(FieldName.countryName)
+    active=ActiveStatus.active
+    MAHolder={}
+    MAHolder.update({FieldName.MAHolderName:name})
+    MAHolder.update({FieldName.MAHolderAddressOne:addressOne})
+    MAHolder.update({FieldName.MAHolderAddressTwo:addressTwo})
+    MAHolder.update({FieldName.MAHolderAddressThree:addressThree})
+    MAHolder.update({FieldName.MAHolderCountry:countryName})
+    MAHolder.update({FieldName.MAHolderActive:active})
+    return MAHolder
