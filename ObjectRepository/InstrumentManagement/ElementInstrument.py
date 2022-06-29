@@ -49,6 +49,32 @@ instrumentInstallationDate="//*[@name='dinstallationdate']"
 
 instrumentExpireDate="//*[@name='dexpirydate']"
 
+instrumentModelNumber="//*[@name='smodelnumber'][@id='smodelnumber']"
+
+instrumentManufacturer="//*[@id='nmanufcode']"
+
+instrumentPONumber="//*[@name='spono'][@id='spono']"
+
+instrumentServiceBy="//*[@id='nservicecode']"
+
+instrumentLab="//*[@id='nsectioncode']"
+
+instrumentIncharge="//*[@name='dexpirydate']"
+
+instrumentStatus="//*[@name='dexpirydate']"
+
+instrumentRemarks="//*[@name='dexpirydate']"
+
+instrumentWindowPeriodPlus="//*[@name='dexpirydate']"
+
+instrumentWindowPeriodPlusPeriod="//*[@name='dexpirydate']"
+
+instrumentWindowPeriodMinus="//*[@name='dexpirydate']"
+
+instrumentWindowPeriodMinusPeriod="//*[@name='dexpirydate']"
+
+instrumentDefaultStatus="//*[@for='ndefaultstatus']"
+
 instrumentAddSubmit="//button[text()='Save']"
 
 instrumentAddCancel="//button[text()='Cancel']"
