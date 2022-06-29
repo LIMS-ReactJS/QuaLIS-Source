@@ -48,3 +48,9 @@ clientAddCancel="//button[text()='Cancel']"
 clientEditSubmit="//button[text()='Save']"
 
 clientEditCancel="//button[text()='Cancel']"
+
+module="Master"
+
+subModule="Contacts"
+
+screen="Client"
