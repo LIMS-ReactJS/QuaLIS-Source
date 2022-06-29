@@ -90,3 +90,6 @@ MAHolderAddressTwo="MAHolderAddressTwo"
 MAHolderAddressThree="MAHolderAddressThree"
 MAHolderCountry="MAHolderCountry"
 MAHolderActive="MAHolderActive"
+
+EDQMMasterFileTypeName="EDQMMasterFileTypeName"
+EDQMMasterFileTypeDescription="EDQMMasterFileTypeDescription"
