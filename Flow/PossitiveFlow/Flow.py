@@ -23,7 +23,7 @@ from Utilities import BrowserOperation, Utility
 
 driver=BrowserOperation.launchLIMS()
 
-TestCoverageMAHolder.MAHolderAdd(driver)
+TestCoverageMAHolder.MAHolderAdd(driver,TestDataFlow.MAHolder())
 
 quit()
 TestCoverageClient.clientAdd(driver,TestDataFlow.client())
