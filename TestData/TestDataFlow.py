@@ -164,3 +164,33 @@ def instrumentCategory():
     instrumentCategory.update({FieldName.instrumentCategoryTechnique:techniqueName})
     instrumentCategory.update({FieldName.instrumentCategoryInterface:InterfaceType.logiLab})
     return instrumentCategory
+
+def supplier():
+    name="Medical Supplier"
+    supplier={}
+    supplier.update({FieldName.supplierName:name})
+    return supplier
+
+
+def instrument():
+    ID="INST 2022"
+    name="Medical Instrument"
+    supplierName=supplier().get(FieldName.supplierName)
+    serialNumber="IC2022"
+    manufacturerDate="10-JULY-2022"
+    PODate="11-JULY-2022"
+    receivedDate="12-JULY-2022"
+    installationDate="13-JULY-2022"
+    expiryDate="14-JULY-2022"
+    instrument={}
+    instrument.update({FieldName.instrumentID:ID})
+    instrument.update({FieldName.instrumentName:name})
+    instrument.update({FieldName.instrumentSupplier:supplierName})
+    instrument.update({FieldName.instrumentCategoryName:instrumentCategory().get(FieldName.instrumentCategoryName)})
+    instrument.update({FieldName.instrumentSerialNumber:serialNumber})
+    instrument.update({FieldName.instrumentSerialNumber:serialNumber})
+    instrument.update({FieldName.instrumentSerialNumber:serialNumber})
+    instrument.update({FieldName.instrumentSerialNumber:serialNumber})
+    instrument.update({FieldName.instrumentSerialNumber:serialNumber})
+    return instrument
+
