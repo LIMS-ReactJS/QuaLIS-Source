@@ -9,7 +9,7 @@
 # 8. source() - || Author: ATE186, Date: 21st June 2022 ID - #37 ||
 ########################################################################################################################################################################################################################################################################################################################################################
 
-from Setting import FieldName, InterfaceType
+from Setting import FieldName, InterfaceType, ActiveStatus
 
 
 def unit():
@@ -218,3 +218,27 @@ def courier():
     courier.update({FieldName.courierFaxNumber:faxNumber})
     courier.update({FieldName.courierEmail:email})
     return courier
+
+def client():
+    name="AGARAM TECH"
+    addressOne="Nungambakkam"
+    addressTwo="Chennai"
+    addressThree="Tamil Nadu, India"
+    phoneNumber="9988776655"
+    mobileNumber="9876543210"
+    faxNumber="LIMS2022"
+    mail="murali.r@agaramtech.com"
+    countryName=country().get(FieldName.countryName)
+    active=ActiveStatus.active
+    client={}
+    client.update({FieldName.clientName:name})
+    client.update({FieldName.clientAddressOne:addressOne})
+    client.update({FieldName.clientAddressTwo:addressTwo})
+    client.update({FieldName.clientAddressThree:addressThree})
+    client.update({FieldName.clientPhoneNumber:phoneNumber})
+    client.update({FieldName.clientMobileNumber:mobileNumber})
+    client.update({FieldName.clientFaxNumber:faxNumber})
+    client.update({FieldName.clientEmail:mail})
+    client.update({FieldName.clientCountry:countryName})
+    client.update({FieldName.clientIsActive:active})
+    return client
