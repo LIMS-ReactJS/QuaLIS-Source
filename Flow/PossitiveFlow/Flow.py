@@ -22,7 +22,7 @@ from TestData import TestDataFlow
 from Utilities import BrowserOperation, Utility
 
 driver=BrowserOperation.launchLIMS()
-TestCoverageInstrument.instrumentAdd(driver)
+TestCoverageInstrument.instrumentAdd(driver,TestDataFlow.instrument())
 
 quit()
 TestCoverageInstrumentCategory.instrumentCategoryAdd(driver,TestDataFlow.instrumentCategory())
