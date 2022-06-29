@@ -25,13 +25,13 @@ courierName="//input[@id='scouriername'][@name='scouriername']"
 
 courierContactsPerson="//input[@id='scontactperson'][@name='scontactperson']"
 
-courierAddressOne="//input[@id='saddress1'][@name='saddress1']"
+courierAddressOne="//*[@id='saddress1'][@name='saddress1']"
 
-courierAddressTwo="//input[@id='saddress2'][@name='saddress2']"
+courierAddressTwo="//*[@id='saddress2'][@name='saddress2']"
 
-courierAddressThree="//input[@id='saddress3'][@name='saddress3']"
+courierAddressThree="//*[@id='saddress3'][@name='saddress3']"
 
-courierCountry="//input[@id='ncountrycode']"
+courierCountry="//*[@id='ncountrycode']"
 
 courierPhoneNumber="//input[@id='sphoneno'][@name='sphoneno']"
 

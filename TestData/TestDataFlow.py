@@ -193,6 +193,28 @@ def instrument():
     instrument.update({FieldName.instrumentInstallationDate:installationDate})
     instrument.update({FieldName.instrumentReceivedDate:receivedDate})
     instrument.update({FieldName.instrumentExpireDate:expiryDate})
-
     return instrument
 
+def courier():
+    name="Agaram Courier"
+    contactPerson="Murali.R"
+    addressOne="Nungambakkam"
+    addressTwo="Chennai"
+    addressThree="TamilNadu, India"
+    countryName=country().get(FieldName.countryName)
+    phoneNumber="9876543210"
+    mobileNumber="9876543210"
+    faxNumber="982022"
+    email="murali.r@agaramtech.com"
+    courier={}
+    courier.update({FieldName.courierName:name})
+    courier.update({FieldName.courierContactPerson:contactPerson})
+    courier.update({FieldName.courierAddressOne:addressOne})
+    courier.update({FieldName.courierAddressTwo:addressTwo})
+    courier.update({FieldName.courierAddressThree:addressThree})
+    courier.update({FieldName.courierCountry:countryName})
+    courier.update({FieldName.courierPhoneNumber:phoneNumber})
+    courier.update({FieldName.courierMobileNumber:mobileNumber})
+    courier.update({FieldName.courierFaxNumber:faxNumber})
+    courier.update({FieldName.courierEmail:email})
+    return courier
