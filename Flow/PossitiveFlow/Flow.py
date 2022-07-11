@@ -17,12 +17,14 @@ from TestCoverage.BaseMaster import TestCoverageLicenseAuthority, TestCoverageCh
 from TestCoverage.Configuration import TestCoveragePasswordPolicy
 from TestCoverage.Contacts import TestCoverageCountry, TestCoverageCourier, TestCoverageClient, TestCoverageMAHolder
 from TestCoverage.InstrumentManagement import TestCoverageInstrumentCategory, TestCoverageInstrument
+from TestCoverage.TestManagement import TestCoverageTestMaster
 from TestCoverage.UserManagement import TestCoverageUsers
 from TestData import TestDataFlow
 from Utilities import BrowserOperation, Utility
 
 driver=BrowserOperation.launchLIMS()
 
+TestCoverageTestMaster.testMasterAdd(driver)
 
 quit()
 

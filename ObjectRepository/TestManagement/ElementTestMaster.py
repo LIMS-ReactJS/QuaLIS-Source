@@ -6,17 +6,17 @@ pin = "//a[@class='text-center nav-link']"
 
 masterIcon="//a[@data-rb-event-key='MenuId_1']"
 
-TestManagementIcon="//span[text()='Test Management']"
+testManagementIcon="//span[text()='Test Management']"
 
-TestIcon="//a[@href='#/testMaster'][@nformcode='41']"
+testIcon="//a[@href='#/testMaster'][@nformcode='41']"
 
-TestAdd="//button[@data-tip='Add']"
+testAdd="//button[@data-tip='Add']"
 
-TestRefresh="//button[@data-tip='Refresh']"
+testRefresh="//button[@data-tip='Refresh']"
 
-TestDownloadPDF="//button[@data-tip='Download PDF']"
+testDownloadPDF="//button[@data-tip='Download PDF']"
 
-TestDownloadExcel="//button[@data-tip='Download Excel']"
+testDownloadExcel="//button[@data-tip='Download Excel']"
 
 TestName="//input[@id='stestname'][@name='stestname']"
 
