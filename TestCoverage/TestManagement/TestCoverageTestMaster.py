@@ -10,3 +10,4 @@ def testMasterAdd(driver):
     Utility.click(driver,ElementTestMaster.testManagementIcon)
     Utility.click(driver,ElementTestMaster.testIcon)
     Utility.click(driver,ElementTestMaster.testAdd)
+

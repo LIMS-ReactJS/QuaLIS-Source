@@ -94,6 +94,13 @@ MAHolderActive="MAHolderActive"
 EDQMMasterFileTypeName="EDQMMasterFileTypeName"
 EDQMMasterFileTypeDescription="EDQMMasterFileTypeDescription"
 
+methodName="methodName"
+methodMethodCategory="methodMethodCategory"
+methodDescription="methodDescription"
+
+methodCategoryName="methodCategoryName"
+methodCategoryDescription="methodCategoryDescription"
+
 TestMasterTestCategory="TestMasterTestCategory"
 TestMasterTestName="TestMasterTestName"
 TestMasterTestAbbreviation="TestMasterTestAbbreviation"

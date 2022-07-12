@@ -9,7 +9,7 @@
 # 8. source() - || Author: ATE186, Date: 21st June 2022 ID - #37 ||
 ########################################################################################################################################################################################################################################################################################################################################################
 
-from Setting import FieldName, InterfaceType, ActiveStatus
+from Setting import FieldName, InterfaceType, ActiveStatus, YesNo
 
 
 def unit():
@@ -258,3 +258,37 @@ def MAHolder():
     MAHolder.update({FieldName.MAHolderCountry:countryName})
     MAHolder.update({FieldName.MAHolderActive:active})
     return MAHolder
+
+def methodCategory():
+    name="PH Method Cat"
+    description="Potential of Hydrogen Method cat"
+    methodCategory = {}
+    methodCategory.update({FieldName.methodCategoryName: name})
+    methodCategory.update({FieldName.methodCategoryDescription: description})
+    return methodCategory
+
+
+def method():
+    name="PH Test"
+    description="Potential of Hydrogen Test"
+    methodCategoryName=methodCategory().get(FieldName.name)
+    method={}
+    method.update({FieldName.methodName: name})
+    method.update({FieldName.methodCategoryName: methodCategoryName})
+    method.update({FieldName.methodDescription: description})
+    return method
+
+def testMaster():
+    name="PH Test"
+    abbreviation="Potential of Hydrogen Test"
+    description="PH is known as the negative logarithm of H+ ion concentration"
+    cost=100
+    labName=lab().get(FieldName.name)
+    methodName=method().get(FieldName.methodName)
+    instrumentCategoryName=instrumentCategory().get(FieldName.instrumentCategoryName)
+    accredited=YesNo.yes
+    active=YesNo.yes
+    parameterName="PH Value"
+    ParameterAbbreviation="PH Value"
+    
+
