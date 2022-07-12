@@ -37,11 +37,11 @@ def productCategory():
     return productCategory
 
 def testCategory():
-    name="Fuel"
+    name="PH TestCategory"
     description="It is about Fuel"
     testCategory={}
-    testCategory.update({FieldName.name:name})
-    testCategory.update({FieldName.description:description})
+    testCategory.update({FieldName.testCategoryName:name})
+    testCategory.update({FieldName.testCategoryDescription:description})
     return testCategory
 
 def lab():
@@ -294,7 +294,7 @@ def testMaster():
     parameterType=ParameterType.numeric
     parameterUnit=unit().get(FieldName.name)
     testMaster={}
-    testMaster.update({FieldName.testCategoryName:testCategoryName})
+    testMaster.update({FieldName.testMasterTestCategory:testCategoryName})
     testMaster.update({FieldName.testMasterTestName:name})
     testMaster.update({FieldName.testMasterTestAbbreviation:abbreviation})
     testMaster.update({FieldName.testMasterTestDescription:description})

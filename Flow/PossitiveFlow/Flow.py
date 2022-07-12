@@ -24,7 +24,7 @@ from Utilities import BrowserOperation, Utility
 
 driver=BrowserOperation.launchLIMS()
 
-TestCoverageTestMaster.testMasterAdd(driver)
+TestCoverageTestMaster.testMasterAdd(driver,TestDataFlow.testMaster())
 
 quit()
 
