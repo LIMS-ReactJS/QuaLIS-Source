@@ -22,35 +22,35 @@ testTestCategory="//*[@id='ntestcategorycode']"
 
 testName="//input[@id='stestname'][@name='stestname']"
 
-testAbbreviation="*[@name='stestsynonym'][@id='stestsynonym']"
+testAbbreviation="//*[@name='stestsynonym'][@id='stestsynonym']"
 
-testDescription="*[@name='smasterfiletypedesc'][@id='smasterfiletypedesc']"
+testDescription="//*[@name='sdescription'][@id='sdescription']"
 
-testCost="*[@name='ncost']"
+testCost="//*[@name='ncost']"
 
-testLab="*[@name='ncost']"
+testLab="//*[@name='ncost']"
 
-testMethod="*[@name='ncost']"
+testMethod="//*[@name='ncost']"
 
-TestInstrumentCategory="*[@name='ncost']"
+TestInstrumentCategory="//*[@name='ncost']"
 
-TestAccredited="*[@name='ncost']"
+TestAccredited="//*[@name='ncost']"
 
-TestActive="*[@name='ncost']"
+TestActive="//*[@name='ncost']"
 
-TestParameterName="*[@name='ncost']"
+TestParameterName="//*[@name='ncost']"
 
-TestParameterAbbreviation="*[@name='ncost']"
+TestParameterAbbreviation="//*[@name='ncost']"
 
-TestParameterType="*[@name='ncost']"
+TestParameterType="//*[@name='ncost']"
 
-TestParameterRoundingDigit="*[@name='nroundingdigits']"
+TestParameterRoundingDigit="//*[@name='nroundingdigits']"
 
-TestParameterUnit="*[@id='nunitcode']"
+TestParameterUnit="//*[@id='nunitcode']"
 
-TestParameterCodedResult="*[@name='spredefinedname']"
+TestParameterCodedResult="//*[@name='spredefinedname']"
 
-TestParameterActualResult="*[@id='ngradecode']"
+TestParameterActualResult="//*[@id='ngradecode']"
 
 TestAddSubmit="//button[text()='Save']"
 
