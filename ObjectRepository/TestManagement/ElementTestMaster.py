@@ -18,17 +18,19 @@ testDownloadPDF="//button[@data-tip='Download PDF']"
 
 testDownloadExcel="//button[@data-tip='Download Excel']"
 
-TestName="//input[@id='stestname'][@name='stestname']"
+testTestCategory="//*[@id='ntestcategorycode']"
 
-TestAbbreviation="*[@name='stestsynonym'][@id='stestsynonym']"
+testName="//input[@id='stestname'][@name='stestname']"
 
-TestDescription="*[@name='smasterfiletypedesc'][@id='smasterfiletypedesc']"
+testAbbreviation="*[@name='stestsynonym'][@id='stestsynonym']"
 
-TestCost="*[@name='ncost']"
+testDescription="*[@name='smasterfiletypedesc'][@id='smasterfiletypedesc']"
 
-TestLab="*[@name='ncost']"
+testCost="*[@name='ncost']"
 
-TestMethod="*[@name='ncost']"
+testLab="*[@name='ncost']"
+
+testMethod="*[@name='ncost']"
 
 TestInstrumentCategory="*[@name='ncost']"
 

@@ -9,7 +9,7 @@
 # 8. source() - || Author: ATE186, Date: 21st June 2022 ID - #37 ||
 ########################################################################################################################################################################################################################################################################################################################################################
 
-from Setting import FieldName, InterfaceType, ActiveStatus, YesNo
+from Setting import FieldName, InterfaceType, ActiveStatus, YesNo, ParameterType
 
 
 def unit():
@@ -279,6 +279,7 @@ def method():
     return method
 
 def testMaster():
+    testCategoryName=testCategory().get(FieldName.testCategoryName)
     name="PH Test"
     abbreviation="Potential of Hydrogen Test"
     description="PH is known as the negative logarithm of H+ ion concentration"
@@ -290,5 +291,14 @@ def testMaster():
     active=YesNo.yes
     parameterName="PH Value"
     ParameterAbbreviation="PH Value"
-    
+    parameterType=ParameterType.numeric
+    parameterUnit=unit().get(FieldName.name)
+    testMaster={}
+    testMaster.update({FieldName.testCategoryName:testCategoryName})
+    testMaster.update({FieldName.testMasterTestName:name})
+    testMaster.update({FieldName.testMasterTestAbbreviation:abbreviation})
+    testMaster.update({FieldName.testMasterTestDescription:description})
+    return testMaster
+
+
 
