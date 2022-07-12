@@ -14,6 +14,9 @@ def testMasterAdd(driver,testMaster):
     testName=testMaster.get(FieldName.testMasterTestName)
     testAbbreviation=testMaster.get(FieldName.testMasterTestAbbreviation)
     testDescription=testMaster.get(FieldName.testMasterTestDescription)
+    testCost=testMaster.get(FieldName.testMasterTestCost)
+    lab=testMaster.get(FieldName.testMasterLab)
+    method=testMaster.get(FieldName.testMasterMethod)
 
     Utility.click(driver,ElementTestMaster.masterIcon)
     Utility.click(driver,ElementTestMaster.testManagementIcon)
@@ -26,9 +29,24 @@ def testMasterAdd(driver,testMaster):
     for i in testCategory:
         if i.text==testCategoryName:
             i.click()
+            break
 
     Utility.sendKeys(driver,ElementTestMaster.testName,testName)
     Utility.clear(driver,ElementTestMaster.testAbbreviation)
     Utility.sendKeys(driver,ElementTestMaster.testAbbreviation,testAbbreviation)
     Utility.sendKeys(driver,ElementTestMaster.testDescription,testDescription)
-    
+    Utility.sendKeys(driver,ElementTestMaster.testCost,testCost)
+
+    Utility.click(driver,ElementTestMaster.testLab)
+    labList=driver.find_elements(By.XPATH,"//*[@id='nsectioncode']/div[2]/div/div")
+    for i in labList:
+        if i.text==lab:
+            i.click()
+            break
+
+    Utility.click(driver,ElementTestMaster.testMethod)
+    methodList=driver.find_elements(By.XPATH,"//*[@id='nmethodcode']/div[2]/div/div")
+    for i in methodList:
+        if i.text==method:
+            i.click()
+            break

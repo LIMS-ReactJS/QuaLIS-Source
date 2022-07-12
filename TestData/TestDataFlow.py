@@ -283,7 +283,7 @@ def testMaster():
     name="PH Test"
     abbreviation="Potential of Hydrogen Test"
     description="PH is known as the negative logarithm of H+ ion concentration"
-    cost=100
+    cost="100"
     labName=lab().get(FieldName.name)
     methodName=method().get(FieldName.methodName)
     instrumentCategoryName=instrumentCategory().get(FieldName.instrumentCategoryName)
@@ -298,6 +298,12 @@ def testMaster():
     testMaster.update({FieldName.testMasterTestName:name})
     testMaster.update({FieldName.testMasterTestAbbreviation:abbreviation})
     testMaster.update({FieldName.testMasterTestDescription:description})
+    testMaster.update({FieldName.testMasterTestCost:cost})
+    testMaster.update({FieldName.testMasterLab:labName})
+    testMaster.update({FieldName.testMasterMethod:methodName})
+    testMaster.update({FieldName.testMasterInstrumentCategory:instrumentCategoryName})
+
+
     return testMaster
 
 

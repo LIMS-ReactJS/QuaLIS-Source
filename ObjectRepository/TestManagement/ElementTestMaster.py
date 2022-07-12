@@ -28,11 +28,11 @@ testDescription="//*[@name='sdescription'][@id='sdescription']"
 
 testCost="//*[@name='ncost']"
 
-testLab="//*[@name='ncost']"
+testLab="//*[@id='nsectioncode']"
 
-testMethod="//*[@name='ncost']"
+testMethod="//*[@id='nmethodcode']"
 
-TestInstrumentCategory="//*[@name='ncost']"
+TestInstrumentCategory="//*[@id='ninstrumentcatcode']"
 
 TestAccredited="//*[@name='ncost']"
 
