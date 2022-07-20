@@ -32,29 +32,29 @@ testLab="//*[@id='nsectioncode']"
 
 testMethod="//*[@id='nmethodcode']"
 
-TestInstrumentCategory="//*[@id='ninstrumentcatcode']"
+testInstrumentCategory="//*[@id='ninstrumentcatcode']"
 
-TestAccredited="//*[@name='ncost']"
+testAccredited="//*[@for='naccredited']"
 
-TestActive="//*[@name='ncost']"
+testActive="//*[@name='ntransactionstatus']"
 
-TestParameterName="//*[@name='ncost']"
+testParameterName="//*[text()='Parameter Name']/following-sibling::div/input"
 
-TestParameterAbbreviation="//*[@name='ncost']"
+testParameterAbbreviation="//*[@name='sparametersynonym'][@id='sparametersynonym']"
 
-TestParameterType="//*[@name='ncost']"
+testParameterType="//*[@id='nparametertypecode']"
 
-TestParameterRoundingDigit="//*[@name='nroundingdigits']"
+testParameterRoundingDigit="//*[@name='nroundingdigits']"
 
-TestParameterUnit="//*[@id='nunitcode']"
+testParameterUnit="//*[@id='nunitcode']"
 
-TestParameterCodedResult="//*[@name='spredefinedname']"
+testParameterCodedResult="//*[@name='spredefinedname']"
 
-TestParameterActualResult="//*[@id='ngradecode']"
+testParameterActualResult="//*[@id='ngradecode']"
 
-TestAddSubmit="//button[text()='Save']"
+testAddSubmit="//button[text()='Save']"
 
-TestAddCancel="//button[text()='Cancel']"
+testAddCancel="//button[text()='Cancel']"
 
 module="Master"
 

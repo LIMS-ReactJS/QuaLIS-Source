@@ -290,9 +290,10 @@ def testMaster():
     accredited=YesNo.yes
     active=YesNo.yes
     parameterName="PH Value"
-    ParameterAbbreviation="PH Value"
+    parameterAbbreviation="PH Value"
     parameterType=ParameterType.numeric
     parameterUnit=unit().get(FieldName.name)
+    roundingDigit="4"
     testMaster={}
     testMaster.update({FieldName.testMasterTestCategory:testCategoryName})
     testMaster.update({FieldName.testMasterTestName:name})
@@ -302,7 +303,13 @@ def testMaster():
     testMaster.update({FieldName.testMasterLab:labName})
     testMaster.update({FieldName.testMasterMethod:methodName})
     testMaster.update({FieldName.testMasterInstrumentCategory:instrumentCategoryName})
-
+    testMaster.update({FieldName.testMasterAccredited:accredited})
+    testMaster.update({FieldName.testMasterActive:active})
+    testMaster.update({FieldName.testMasterParameterName:parameterName})
+    testMaster.update({FieldName.testMasterParameterAbbreviation:parameterAbbreviation})
+    testMaster.update({FieldName.testMasterParameterType:parameterType})
+    testMaster.update({FieldName.testMasterUnit:parameterUnit})
+    testMaster.update({FieldName.testMasterRoundingDigit:roundingDigit})
 
     return testMaster
 
